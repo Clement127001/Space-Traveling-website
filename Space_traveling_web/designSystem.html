@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- style sheet -->
+  <link rel="stylesheet" href="index.css">
+
+  <title>Design System</title>
+</head>
+
+<body class="bg-dark text-white">
+
+  <div class="container">
+    <h1>Design system</h1>
+    <!-- colors -->
+    <section id="colors">
+      <h2 class="numbered-tile"><span>01 </span> colors</h2>
+      <div class="flex">
+        <div style="flex-grow:1 ;">
+          <div class="bg-dark text-white" style="padding: 3rem 1rem 1rem; border: 1px solid white">#0B0D17</div>
+          <p><span class="text-light">RGB</span> 11, 13, 23</p>
+          <p><span class="text-light">HSL</span> 230°, 35%, 7%</p>
+        </div>
+        <div style="flex-grow: 1;">
+          <div class="bg-light text-dark" style="padding: 3rem 1rem 1rem; border: 1px solid rgb(255, 255, 255)">#D0D6F9
+          </div>
+          <p><span class="text-light">RGB</span> 208, 214, 249</p>
+          <p><span class="text-light">HSL</span> 231°, 77%, 90%</p>
+        </div>
+        <div style="flex-grow: 1;">
+          <div class="bg-white text-dark" style="padding: 3rem 1rem 1rem; border: 1px solid rgb(255, 255, 255);">#FFFFFF
+          </div>
+          <p><span class="text-light">RGB</span> 255, 255, 255</p>
+          <p><span class="text-light">HSL</span> 0°, 0%, 100%</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- typography -->
+
+    <section id="typography" style="margin: 4rem 0">
+      <h2 class="numbered-tile"><span>02 </span>Typography</h2>
+      <div class="flex">
+        <div class="flow" style="flex-basis: 100%; --space:2rem">
+          <div>
+            <p class="text-light">Heading 1 - Bellefair Regular - 150px</p>
+            <p class="fs-900 ff-serief uppercase ">Earth</p>
+          </div>
+          <div>
+            <p class="text-light">Heading 2 - Bellefair Regular - 100px</p>
+            <p class="fs-800 ff-serief uppercase">Venus</p>
+          </div>
+          <div>
+            <p class="text-light">Heading 3 - Bellefair Regular - 56px</p>
+            <p class="fs-700 ff-serief uppercase">Jupiter & Saturn</p>
+          </div>
+          <div>
+            <p class="text-light">Heading 4 - Bellefair Regular - 32px</p>
+            <p class="fs-600 ff-serief uppercase">Uranus, Neptune, & Pluto</p>
+          </div>
+          <div>
+            <p class="text-light">Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space</p>
+            <p class="text-light fs-500 ff-cond uppercase letter-spacing-1">So, you want to travel to space</p>
+          </div>
+
+        </div>
+
+        <div class="flow" style="flex-basis: 100% ; --space:4rem;">
+          <div>
+            <p class="text-light">Subheading 1 - Bellefair Regular - 28px</p>
+            <p class="fs-500 ff-serief uppercase">384,400 km</p>
+          </div>
+          <div>
+            <p class="text-light">Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character Space</p>
+            <p class="fs-200 uppercase ff-cond letter-spacing-3">Avg. Distance</p>
+          </div>
+          <div>
+            <p class="text-light">Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space</p>
+            <p class="fs-300 uppercase ff-cond letter-spacing-2">Europa</p>
+          </div>
+          <div>
+            <p class="text-light">Body Text</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh
+              nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
+              laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo.
+              Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
+              Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
+              ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam
+              mollis. Ut justo. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+              hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- interactive elements -->
+    <section class="flow">
+      <h2 class="numbered-tile"><span>03 </span>Interactive Elements</h2>
+      <div>
+        <!-- navigation and indicator -->
+        <nav>
+
+          <ul class="flex primary-navigation underlined-indicator">
+            <li class="active"><a href="#"
+                class="ff-cond fs-400 uppercase letter-spacing-2 text-white"><span>00</span>Active</a>
+            </li>
+            <li><a href="#" class="ff-cond fs-400 uppercase letter-spacing-2 text-light"><span>01</span>Hover</a></li>
+            <li><a href="#" class="ff-cond fs-400 uppercase letter-spacing-2 text-light"><span>02</span>Idle</a></li>
+          </ul>
+
+        </nav>
+      </div>
+      <div class="flex">
+
+
+        <div>
+          <a href="#" class="large-button ff-serief fs-600 text-dark bg-white uppercase">Explore</a>
+        </div>
+        <!-- indicator -->
+        <div style=" flex-basis:100%;">
+          <!-- underlined indicator -->
+
+
+
+
+          <div class="underlined-indicator flex tab-list" style="margin-bottom:5em; justify-content: center">
+
+            <button aria-selected="true" class="upercase fs-cond letter-spacing-2 bg-dark text-light">Moon</button>
+            <button aria-selected="false" class="upercase fs-cond letter-spacing-2 bg-dark text-light">Mars</button>
+            <button aria-selected="false" class="upercase fs-cond letter-spacing-2 bg-dark text-light">Euthopia</button>
+
+
+          </div>
+          <!-- dot indicator -->
+
+          <div class="dot-indicator  flex " style="margin-bottom :5em; justify-content: center;">
+
+            <button aria-selected="true"><span class="sr-only">Dot List</span></button>
+            <button aria-selected="false"><span class="sr-only">Dot List</span></button>
+            <button aria-selected="false"><span class="sr-only">Dot List</span></button>
+
+          </div>
+          <!-- number indicator -->
+
+
+          <div class="num-indicator grid " style="margin-bottom:50vh; justify-content: center">
+
+            <button aria-selected="true"><span>1</span></button>
+            <button aria-selected="false"><span>2</span></button>
+            <button aria-selected="false"><span>3</span></button>
+
+          </div>
+
+
+        </div>
+
+      </div>
+  </div>
+  </section>
+
+  </div>
+
+  </div>
+
+  <script src="index.pack.js"></script>
+</body>
+
+</html>
